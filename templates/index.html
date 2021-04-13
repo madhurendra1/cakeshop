@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake shop</title>
+    <style>
+    .image {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+        margin: 18px;
+        padding: 20px;
+    }
+
+    .img {
+        height: 190px;
+        width: 190px;
+    }
+
+    .imgbox {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    label {
+        font-size: 23px;
+        align-items: center;
+        margin-left: 50px;
+    }
+
+    .contact {
+        bottom: 0px;
+        width: 100vw;
+        height: 14vh;
+        background: #091706;
+        color: white;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="image">
+        <div class="imgbox">
+            <img src="{{url_for('static', filename='img/9.jpeg')}}"  alt="" class="img" id="img1">
+            <br>
+            <label for="img1">₹450</label>
+        </div>
+        <div class="imgbox">
+            <img src="static/img/2.jpeg" alt="" class="img" id="img2">
+            <label for="img2">₹420</label>
+        </div>
+        <div class="imgbox">
+            <img src="static/img/3.jpeg" alt="" class="img" id="img3">
+            <label for="img3">₹475</label>
+        </div>
+        <div class="imgbox">
+            <img src="static/img/4.jpeg" alt="" class="img" id="img4">
+            <label for="img4">₹525</label>
+        </div>
+        <div class="imgbox">
+            <img src="static/img/5.jpeg" alt="" class="img" id="img5">
+            <label for="img5">₹550</label>
+        </div>
+        <div class="imgbox">
+            <img src="static/img/6.jpeg" alt="" class="img" id="img6">
+            <label for="img6">₹550</label>
+        </div>
+        <div class="imgbox">
+            <img src="static/img/7.jpeg" alt="" class="img" id="img7">
+            <label for="img7">₹450</label>
+        </div>
+        <div class="imgbox">
+            <img src="static/img/8.jpeg" alt="" class="img" id="img8">
+            <label for="img8">₹520</label>
+        </div>
+        <div class="imgbox">
+            <img src="static/img/13.jpeg" alt="" class="img" id="img9">
+            <label for="img9">₹4250</label>
+        </div>
+        <div class="imgbox">
+            <img src="static/img/10.jpeg" alt="" class="img" id="img10">
+            <label for="img10">₹450</label>
+        </div>
+        <div class="imgbox">
+            <img src="static/img/11.jpeg" alt="" class="img" id="img11">
+            <label for="img11">₹575</label>
+        </div>
+        <div class="imgbox">
+            <img src="static/img/14.jpeg" alt="" class="img" id="img12">
+            <label for="img12">₹370</label>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <center>
+            <h3 style="margin-bottom: 0px;">For order and more information </h3>
+            <p style="margin-top: 0px;">Contact us</p>
+            <strong>
+                <p style="margin-top: 4px;">Cake shop: 8102576151</p>
+            </strong>
+        </center>
+    </div>
+</body>
+
+</html>
